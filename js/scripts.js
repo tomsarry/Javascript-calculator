@@ -1,30 +1,3 @@
-// store the screen as a variable
-var scr = document.getElementById('scr');
-
-// store the button numbers
-var btn0 = document.getElementById('btn0');
-var btn1 = document.getElementById('btn1');
-var btn2 = document.getElementById('btn2');
-var btn3 = document.getElementById('btn3');
-var btn4 = document.getElementById('btn4');
-var btn5 = document.getElementById('btn5');
-var btn6 = document.getElementById('btn6');
-var btn7 = document.getElementById('btn7');
-var btn8 = document.getElementById('btn8');
-var btn9 = document.getElementById('btn9');
-
-// store the button operations
-var btnSum = document.getElementById('btnSum');
-var btnSub = document.getElementById('btnSub');
-var btnMul = document.getElementById('btnMul');
-var btnDiv = document.getElementById('btnDiv');
-
-// store the equal  / clear button
-var btnEql = document.getElementById('btnEql');
-var btnClr = document.getElementById('btnClr');
-var btnDel = document.getElementById('btnDel');
-
-
 // reset the screen with C
 btnClr.onclick = function () {
 	scr.innerHTML = '';
@@ -72,20 +45,11 @@ function logKey(k) {
 	}
 }
 
-btn0.onclick = addToScreen;
-btn1.onclick = addToScreen;
-btn2.onclick = addToScreen;
-btn3.onclick = addToScreen;
-btn4.onclick = addToScreen;
-btn5.onclick = addToScreen;
-btn6.onclick = addToScreen;
-btn7.onclick = addToScreen;
-btn8.onclick = addToScreen;
-btn9.onclick = addToScreen;
-btnSum.onclick = addToScreen;
-btnSub.onclick = addToScreen;
-btnMul.onclick = addToScreen;
-btnDiv.onclick = addToScreen;
+let btns = [btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnSum, btnSub, btnMul, btnDiv];
+
+btns.forEach(function(btn) {
+	btn.onclick = addToScreen;
+});
 
 
 function eraseLast() {
