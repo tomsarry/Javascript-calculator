@@ -71,7 +71,8 @@ footer {
 	width: 370px;
 	background: black;
 	margin: 70px auto;
-	border: 3.5px solid black;
+	border: 4.5px solid black;
+	border-radius: 10px;
 }
 
 
@@ -84,6 +85,7 @@ footer {
 .screen {
 	background: var(--main-background-color);
 	border: 3.5px solid black;
+	border-radius: 10px;
 	
 	height: 90px;
 	line-height: 90px;
