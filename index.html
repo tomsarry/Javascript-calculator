@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Javascript calculator">
+	<meta name="keywords" content="HTML, CSS, JavaScript, Calculator">
+  	<meta name="author" content="Tom SARRY">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Calculator</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
-	<div class="top">		
-		<h1 class="title">Basic calculator using Javascript</h1>
-	</div>
+	<header>
+		<div class="top">		
+			<h1 class="title">Basic calculator using Javascript</h1>
+		</div>
+	</header>
 
-	<div class='container'>
-		<div id='scr' class='screen ellipsis'></div>
+	<main>
+		<div class='container'>
 
-		<div class='buttons'>
+			<div id='scr' class='screen ellipsis'></div>
 
-			<div class='line1'>
-				<button id='btn1' class='btn btnNum'>1</button>
-				<button id='btn2' class='btn btnNum'>2</button>
-				<button id='btn3' class='btn btnNum'>3</button>
-				<button id='btnDel' class='btn btnDel'><</button>
-			</div>
+			<div class='buttons'>
 
-			<div class='line2'>
-				<button id='btn4' class='btn btnNum'>4</button>
-				<button id='btn5' class='btn btnNum'>5</button>
-				<button id='btn6' class='btn btnNum'>6</button>
-				<button id='btnSum' class='btn btnOp'>+</button>
-			</div>
+				<div class='row'>
+					<span id='btn1' class='btn btnNum'>1</span>
+					<span id='btn2' class='btn btnNum'>2</span>
+					<span id='btn3' class='btn btnNum'>3</span>
+					<span id='btnDel' class='btn btnDel'><</span>
+				</div>
 
-			<div class='line3'>
-				<button id='btn7' class='btn btnNum'>7</button>
-				<button id='btn8' class='btn btnNum'>8</button>
-				<button id='btn9' class='btn btnNum'>9</button>
-				<button id='btnSub' class='btn btnOp'>-</button>
-			</div>
+				<div class='row'>
+					<span id='btn4' class='btn btnNum'>4</span>
+					<span id='btn5' class='btn btnNum'>5</span>
+					<span id='btn6' class='btn btnNum'>6</span>
+					<span id='btnSum' class='btn btnOp'>+</span>
+				</div>
 
-			<div class='line4'>
-				<button id='btnClr' class='btn btnDel'>C</button>
-				<button id='btn0' class='btn btnNum'>0</button>
-				<button id='btnDiv' class='btn btnOp'>÷</button>
-				<button id='btnMul' class='btn btnOp'>x</button>
-			</div>
+				<div class='row'>
+					<span id='btn7' class='btn btnNum'>7</span>
+					<span id='btn8' class='btn btnNum'>8</span>
+					<span id='btn9' class='btn btnNum'>9</span>
+					<span id='btnSub' class='btn btnOp'>-</span>
+				</div>
 
-			<div class='line5'>
-				<button id='btnEql' class='btn btnEql'>=</button>			
+				<div class='row'>
+					<span id='btnClr' class='btn btnDel'>C</span>
+					<span id='btn0' class='btn btnNum'>0</span>
+					<span id='btnDiv' class='btn btnOp'>÷</span>
+					<span id='btnMul' class='btn btnOp'>x</span>
+				</div>
+
+				<div class='row'>
+					<span id='btnEql' class='btn btnEql'>=</span>			
+				</div>
+
 			</div>
 
 		</div>
-	</div>
+
+	</main>
+
+	<footer>
+		<div class='div-ftr'>Copyright SARRY Tom / 2020</div>
+	</footer>
+
 
 </body>
 
-<div class="div-ftr">
-	<footer class='footer'>Copyright SARRY Tom / 2020</footer>
-</div>
 <script type="text/javascript" src="js/scripts.js"></script>
 
 </html>
