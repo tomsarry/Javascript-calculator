@@ -1,3 +1,5 @@
+let root = document.documentElement;
+
 // reset the screen with C
 btnClr.onclick = function () {
 	scr.innerHTML = '';
@@ -93,3 +95,9 @@ function compute() {
 
 btnEql.onclick = compute;
 btnDel.onclick = eraseLast;
+
+
+theme.onclick = function() {
+	let currentTheme = document.body.className;
+	currentTheme === 'green-theme' ? (document.body.className = 'orange-theme') : (document.body.className = 'green-theme');
+};
