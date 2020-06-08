@@ -5,20 +5,6 @@
 html { 
 	--main-background-color: #2b2b2b;
 	transition-duration: 300ms;
-}
-
-html {
-	width: 100%;
-}
-
-body {
-	width: 100%;
-	font-family: 'Lato', sans-serif; 
-	background-color: var(--main-background-color);
-	overflow: hidden;	
-}
-
-.orange-theme {
 	--main-num-color: #f5eeda;
 	--secondary-num-color: #efe3c3;
 
@@ -36,7 +22,19 @@ body {
 	--opposite-color: #00ff00;
 }
 
-.green-theme {
+html {
+	width: 100%;
+}
+
+body {
+	width: 100%;
+	font-family: 'Lato', sans-serif; 
+	background-color: var(--main-background-color);
+	overflow: hidden;	
+}
+
+
+.dark-theme {
 	--main-num-color: #e6e6e6;
 	--secondary-num-color: #cccccc;
 

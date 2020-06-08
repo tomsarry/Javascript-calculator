@@ -1,5 +1,3 @@
-let root = document.documentElement;
-
 // reset the screen with C
 btnClr.onclick = function () {
 	scr.innerHTML = '';
@@ -30,6 +28,7 @@ function addToScreen(e) {
 // add ability to remove last character
 document.addEventListener('keydown', logKey);
 
+//TODO: check keyname and not keyvalue 
 function logKey(k) {
 	let n = k.keyCode;
 	// supr key
@@ -95,9 +94,3 @@ function compute() {
 
 btnEql.onclick = compute;
 btnDel.onclick = eraseLast;
-
-
-theme.onclick = function() {
-	let currentTheme = document.body.className;
-	currentTheme === 'green-theme' ? (document.body.className = 'orange-theme') : (document.body.className = 'green-theme');
-};
